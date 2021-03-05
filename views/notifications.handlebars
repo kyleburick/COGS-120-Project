@@ -62,7 +62,13 @@
       <input type="checkbox" id="teamComplete" name="teamComplete" checked>
       <label for="teamComplete">Team Member completed task</label>
     </div>
-    
+   
+
+  <br><br>
+    <button onclick="addNotification()" class="dropbtn">Add</button>
+    <br><br>
+    <a href="create" class="dropbtn">back</a>
+
 </div>
 
 <script>
@@ -108,9 +114,15 @@ function filterFunction() {
     }
   }
 }
+
+/* Add button */
+function addNotification(){
+  //var projName = $.get("/data.json", data.projectName); <!-- trying to add selected project name to the Alert string-->
+  //alert("Your subtask has been added to ", projName);
+  alert("Your new notifications has been added to (proj1)");
+}
 </script>
-<br><br>
-    <a href="newProj" class="dropbtn">back</a>
+
 </header>
 </body>
 </html>
